@@ -37,3 +37,50 @@ const amy = {
 const prices = [34, 5, 2]
 const shippingCost = 50
 let utenteCheEffettuaLAcquisto = amy //cambia il valore qui per provare se il tuo algoritmo funziona!
+
+arrUtenti = []
+
+arrUtenti.push(marco, paul, amy)
+console.log(arrUtenti)
+
+for (const iterator of arrUtenti) {
+  if(iterator.isAmbassador === true){
+    console.log(`${iterator.name} ${iterator.lastName} è un Ambassador`)
+  } else {
+    console.log(`${iterator.name} ${iterator.lastName} non è un Ambassador`)
+  }
+}
+
+
+
+
+
+let totale = 0
+
+for (let i = 0; i < prices.length; i++){
+  totale += prices[i]
+  }
+
+  if(utenteCheEffettuaLAcquisto.isAmbassador === true){
+    totale = totale - (totale * 30 / 100) 
+  }
+
+  if(totale <= 100){
+    totale += shippingCost
+  }
+
+console.log(totale)
+
+
+
+
+
+const soloAmbassador =[]
+for (let i = 0; i < arrUtenti.length; i++) {
+  const utente = arrUtenti[i]
+  if(arrUtenti.isAmbassador){
+    soloAmbassador.push(utente)
+  }
+}
+
+console.log(soloAmbassador)
