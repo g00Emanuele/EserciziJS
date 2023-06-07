@@ -123,10 +123,24 @@ console.log(codeString)
  SUGGERIMENTO: operatore modulo
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function chech3and7(numero){
+    if(numero % 3 === 0 || numero % 7 === 0 ){
+        return true
+    } else {
+        return false
+    }
+}
+
+tryNumber = chech3and7(12)
+console.log(tryNumber)
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(stringa){
+    newString = stringa.slice(1, stringa.length - 1)
+    return newString
+}
+
+console.log(cutString('emanuele'))
