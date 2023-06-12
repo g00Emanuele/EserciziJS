@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 1em;
+}
+
+main {
+    margin: 1em;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    padding: 0.1em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-text h2, .card-text p {
+    margin-bottom: 20% ;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-bkr {
+    background-color: aquamarine;
+}
+
+.change-link {
+    background-color: red;
+}
+
+.invisibility {
+    display: none;
+}
+
