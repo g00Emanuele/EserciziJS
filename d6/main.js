@@ -51,7 +51,7 @@ function randomColor(){
 
 function randomColorPrices() {
     let prices = document.getElementsByClassName('price')
-    for ( price of prices ) {
-        price.style.color = randomColor()
+    for ( iterator of prices ) {
+        iterator.style.color = randomColor()
     }
 }
